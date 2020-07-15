@@ -1,0 +1,32 @@
+{
+  "name": "discord-twitch-status-selfbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/iroguesniper/discord-twitch-status-selfbot.git"
+  },
+  "keywords": [
+    "discord",
+    "twitch",
+    "status"
+  ],
+  "author": "Darshan Patel <iroguesniper@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iroguesniper/discord-twitch-status-selfbot/issues"
+  },
+  "homepage": "https://github.com/iroguesniper/discord-twitch-status-selfbot#readme",
+  "dependencies": {
+    "discord.js": "^11.6.4"
+  },
+  "devDependencies": {
+    "eslint": "^5.15.3",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0"
+  }
+}
