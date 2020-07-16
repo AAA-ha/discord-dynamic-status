@@ -1,1 +1,1 @@
-# discord-twitch-status-selfbot
+# discord-dynamic-status

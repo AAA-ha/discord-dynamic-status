@@ -1,13 +1,15 @@
 const Discord = require('discord.js')
+const extractStatus = require('./extract_status')
 
 const TOKEN = process.env.TOKEN || 'PUT_YOUR_TOKEN_HERE' // How to extract token https://www.youtube.com/watch?v=tI1lzqzLQCs
 
 const DELAY = 10 // In seconds
 
 const STATUS_LIST = [
-    { name: 'Shhh', options: { url: 'https://www.twitch.tv/ANYNAMEHERE' } },
-    { name: 'Pornhub.com', options: { type: 'WATCHING' } },
-    { name: 'Sad songs', options: { type: 'LISTENING' } },
+    // { name: 'Shhh', options: { url: 'https://www.twitch.tv/ANYNAMEHERE' } },
+    // { name: 'Pornhub.com', options: { type: 'WATCHING' } },
+    // { name: 'Sad songs', options: { type: 'LISTENING' } },
+    ...extractStatus(),
 ]
 
 const start = async () => {
