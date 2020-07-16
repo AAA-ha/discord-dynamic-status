@@ -1,6 +1,6 @@
 const Discord = require('discord.js')
 
-const TOKEN = '' // How to extract token https://www.youtube.com/watch?v=tI1lzqzLQCs
+const TOKEN = process.env.TOKEN || 'PUT_YOUR_TOKEN_HERE' // How to extract token https://www.youtube.com/watch?v=tI1lzqzLQCs
 
 const DELAY = 10 // In seconds
 
