@@ -3,7 +3,7 @@ const extractStatus = require('./extract_status')
 
 const TOKEN = process.env.TOKEN || 'PUT_YOUR_TOKEN_HERE' // How to extract token https://www.youtube.com/watch?v=tI1lzqzLQCs
 
-const DELAY = 10 // In seconds
+const DELAY = parseInt(process.env.DELAY || 10, 10) // In seconds
 
 const STATUS_LIST = [
     // { name: 'Shhh', options: { url: 'https://www.twitch.tv/ANYNAMEHERE' } },
@@ -27,7 +27,7 @@ const start = async () => {
             await bot.user.setActivity(activity.name, activity.options)
             console.log('status updated : ', activity)
             // eslint-disable-next-line no-await-in-loop
-            await new Promise(resolve => setTimeout(resolve, DELAY * 1000))
+            await new Promise(resolve => setTimeout(resolve, DELAY > 9 ? DELAY * 1000 : 10 * 1000))
         }
     }
 }
